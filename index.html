@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main-slide.css" />
+    <link rel="stylesheet" href="./css/main-content.css" />
     <link rel="stylesheet" href="./css/card-list.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
@@ -22,6 +24,9 @@
   <body>
     <!-- 먼저 레이아웃을 잡기위해 주석작성 및 div 를 사용한다. -->
     <!-- div 는 레이아웃 용 이외에는 용도가 없다. -->
+
+    <!-- 반투명 배경 -->
+    <div class="bg-mb-menu"></div>
 
     <!-- 상단 영역 -->
     <header class="header">
@@ -41,15 +46,28 @@
           <a href="#">소식</a>
           <a href="#">팀 & 크루</a>
           <a href="#">영입</a>
+
           <button id="search">
             <img src="./images/icon/icon-search.png" alt="" />
+          </button>
+          <!-- 모바일메뉴 -->
+          <button id="mb-menu-bt">
+            <img src="./images/icon/icon-hbr.png" alt="모바일메뉴" />
           </button>
         </div>
       </div>
     </header>
-    <!-- 내용영역 -->
-    <main class="main">
+    <!-- 모바일용 메뉴 -->
+    <div class="mb-menu">
       <div class="layout">
+        <a href="#">소식</a>
+        <a href="#">팀 & 크루</a>
+        <a href="#">영입</a>
+      </div>
+    </div>
+    <!-- 내용영역 -->
+    <main class="main">      
+     
         <!-- 슬라이드 영역 -->
         <div class="main-slide">
           <!-- 왼쪽 슬라이드 -->
@@ -277,9 +295,72 @@
               </a>
               <!--@End card -->
             </div>
+            <div class="list-card-bt-wrap">
+              <button id="bt-more-card" class="bt">전체보기</button>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- 카드 슬라이드 -->
+       <div class="mb-card-slide"> 
+        <h4 class="list-title">폴더 📁</h4>
+        <div class="mb-card-slide-wrap">
+          <!--@Start card -->
+          <a href="#" class="card-wrap">
+            <div class="card-img">
+              <img src="./images/p1.png" alt="card" />
+            </div>
+
+            <div class="card-info">
+              <h5 class="card-cate">LLMs</h5>
+              <span class="card-count">5</span>
+            </div>
+          </a>
+          <!--@End card -->
+          <!--@Start card -->
+          <a href="#" class="card-wrap">
+            <div class="card-img">
+              <img src="./images/p1.png" alt="card" />
+            </div>
+
+            <div class="card-info">
+              <h5 class="card-cate">LLMs</h5>
+              <span class="card-count">5</span>
+            </div>
+          </a>
+          <!--@End card -->
+          <!--@Start card -->
+          <a href="#" class="card-wrap">
+            <div class="card-img">
+              <img src="./images/p1.png" alt="card" />
+            </div>
+
+            <div class="card-info">
+              <h5 class="card-cate">LLMs</h5>
+              <span class="card-count">5</span>
+            </div>
+          </a>
+          <!--@End card -->
+          <!--@Start card -->
+          <a href="#" class="card-wrap">
+            <div class="card-img">
+              <img src="./images/p1.png" alt="card" />
+            </div>
+
+            <div class="card-info">
+              <h5 class="card-cate">LLMs</h5>
+              <span class="card-count">5</span>
+            </div>
+          </a>
+          <!--@End card -->
+        </div>            
+        <div class="list-card-bt-wrap">
+          <button id="bt-mb-more-card" class="bt">전체보기</button>
+        </div>
+       </div>
+      
+
     </main>
     <!-- 하단 영역 -->
     <footer class="footer">
