@@ -29,6 +29,20 @@
   object-fit: cover;
 }
 
+.visual-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.visual-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  width: 20px;
+}
+
 .main-slide .right {
   /* 370 / 1180 * 100 */
   width: 31.355vw;
@@ -60,12 +74,14 @@
 .mb-card-slide {
   display: none;
   margin-top: 60px;
+  overflow: hidden;
 }
 /* js 로 변경 예정 */
 .mb-card-slide-wrap {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  width: 1160px;
 }
 /* 가로 너비 대비 세로가 평상시에도 변한다. */
 @media screen and (max-width: 1024px) {
